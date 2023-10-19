@@ -32,10 +32,11 @@ const IconBtn = () => {
   }, []);
 
   return (
-    <div class=''>
+    <div class='icon'>
       <button className="icon-button" onClick={handleClick} disabled={isLoading}>
-        {isLoading ? 'Loading...' : (icon && <FontAwesomeIcon icon={icon} />)}
+        Icon
       </button>
+      {isLoading ? 'Loading...' : (icon && <FontAwesomeIcon icon={icon} />)}
     </div>
   );
 };
